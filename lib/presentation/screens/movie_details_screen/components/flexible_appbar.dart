@@ -49,27 +49,27 @@ class FlexibleAppBar extends StatelessWidget {
           Align(
             alignment: Alignment.centerLeft,
             child: Padding(
-              padding: const EdgeInsets.all(8.0),
-              child: Container(
+              padding: const EdgeInsets.all(10.0),
+              child: SizedBox(
                 width: max(minPosterWidth, currentPosterWidth),
                 height: size.height * 0.26,
-                clipBehavior: Clip.antiAlias,
-                decoration: BoxDecoration(
-                  borderRadius: BorderRadius.circular(
-                    25,
-                  ),
-                  boxShadow: const [
-                    BoxShadow(
-                      color: AppColors.darkerBgColor,
-                      blurRadius: 7,
+                child: Hero(
+                  tag: movie.id,
+                  child: Card(
+                    clipBehavior: Clip.antiAlias,
+                    elevation: 10,
+                    shape: const RoundedRectangleBorder(
+                      borderRadius: BorderRadius.all(
+                        Radius.circular(25),
+                      ),
                     ),
-                  ],
-                ),
-                child: CustomCachedImage(
-                  imageUrl: ConstantStrings.imageBaseUrl +
-                      ConstantStrings.posetrSizes[1] +
-                      (movie.posterPath),
-                  height: size.height * 0.3,
+                    child: CustomCachedImage(
+                      imageUrl: ConstantStrings.imageBaseUrl +
+                          ConstantStrings.posetrSizes[1] +
+                          (movie.posterPath),
+                      height: size.height * 0.3,
+                    ),
+                  ),
                 ),
               ),
             ),

@@ -103,6 +103,7 @@ class MoviesScreen extends StatelessWidget {
                 onChanged: (value) {
                   if (value == '') search(context, value);
                 },
+                onTapOutside: (event) => FocusScope.of(context).unfocus(),
               ),
             ),
           ],

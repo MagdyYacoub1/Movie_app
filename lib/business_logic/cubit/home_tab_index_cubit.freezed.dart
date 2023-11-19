@@ -95,21 +95,22 @@ class _$HomeTabIndexStateCopyWithImpl<$Res, $Val extends HomeTabIndexState>
 }
 
 /// @nodoc
-abstract class _$$_InitialCopyWith<$Res>
+abstract class _$$InitialImplCopyWith<$Res>
     implements $HomeTabIndexStateCopyWith<$Res> {
-  factory _$$_InitialCopyWith(
-          _$_Initial value, $Res Function(_$_Initial) then) =
-      __$$_InitialCopyWithImpl<$Res>;
+  factory _$$InitialImplCopyWith(
+          _$InitialImpl value, $Res Function(_$InitialImpl) then) =
+      __$$InitialImplCopyWithImpl<$Res>;
   @override
   @useResult
   $Res call({int tabIndex});
 }
 
 /// @nodoc
-class __$$_InitialCopyWithImpl<$Res>
-    extends _$HomeTabIndexStateCopyWithImpl<$Res, _$_Initial>
-    implements _$$_InitialCopyWith<$Res> {
-  __$$_InitialCopyWithImpl(_$_Initial _value, $Res Function(_$_Initial) _then)
+class __$$InitialImplCopyWithImpl<$Res>
+    extends _$HomeTabIndexStateCopyWithImpl<$Res, _$InitialImpl>
+    implements _$$InitialImplCopyWith<$Res> {
+  __$$InitialImplCopyWithImpl(
+      _$InitialImpl _value, $Res Function(_$InitialImpl) _then)
       : super(_value, _then);
 
   @pragma('vm:prefer-inline')
@@ -117,7 +118,7 @@ class __$$_InitialCopyWithImpl<$Res>
   $Res call({
     Object? tabIndex = null,
   }) {
-    return _then(_$_Initial(
+    return _then(_$InitialImpl(
       null == tabIndex
           ? _value.tabIndex
           : tabIndex // ignore: cast_nullable_to_non_nullable
@@ -128,8 +129,8 @@ class __$$_InitialCopyWithImpl<$Res>
 
 /// @nodoc
 
-class _$_Initial implements _Initial {
-  const _$_Initial(this.tabIndex);
+class _$InitialImpl implements _Initial {
+  const _$InitialImpl(this.tabIndex);
 
   @override
   final int tabIndex;
@@ -143,7 +144,7 @@ class _$_Initial implements _Initial {
   bool operator ==(dynamic other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
-            other is _$_Initial &&
+            other is _$InitialImpl &&
             (identical(other.tabIndex, tabIndex) ||
                 other.tabIndex == tabIndex));
   }
@@ -154,8 +155,8 @@ class _$_Initial implements _Initial {
   @JsonKey(ignore: true)
   @override
   @pragma('vm:prefer-inline')
-  _$$_InitialCopyWith<_$_Initial> get copyWith =>
-      __$$_InitialCopyWithImpl<_$_Initial>(this, _$identity);
+  _$$InitialImplCopyWith<_$InitialImpl> get copyWith =>
+      __$$InitialImplCopyWithImpl<_$InitialImpl>(this, _$identity);
 
   @override
   @optionalTypeArgs
@@ -221,33 +222,33 @@ class _$_Initial implements _Initial {
 }
 
 abstract class _Initial implements HomeTabIndexState {
-  const factory _Initial(final int tabIndex) = _$_Initial;
+  const factory _Initial(final int tabIndex) = _$InitialImpl;
 
   @override
   int get tabIndex;
   @override
   @JsonKey(ignore: true)
-  _$$_InitialCopyWith<_$_Initial> get copyWith =>
+  _$$InitialImplCopyWith<_$InitialImpl> get copyWith =>
       throw _privateConstructorUsedError;
 }
 
 /// @nodoc
-abstract class _$$_TabChangeCopyWith<$Res>
+abstract class _$$TabChangeImplCopyWith<$Res>
     implements $HomeTabIndexStateCopyWith<$Res> {
-  factory _$$_TabChangeCopyWith(
-          _$_TabChange value, $Res Function(_$_TabChange) then) =
-      __$$_TabChangeCopyWithImpl<$Res>;
+  factory _$$TabChangeImplCopyWith(
+          _$TabChangeImpl value, $Res Function(_$TabChangeImpl) then) =
+      __$$TabChangeImplCopyWithImpl<$Res>;
   @override
   @useResult
   $Res call({int tabIndex});
 }
 
 /// @nodoc
-class __$$_TabChangeCopyWithImpl<$Res>
-    extends _$HomeTabIndexStateCopyWithImpl<$Res, _$_TabChange>
-    implements _$$_TabChangeCopyWith<$Res> {
-  __$$_TabChangeCopyWithImpl(
-      _$_TabChange _value, $Res Function(_$_TabChange) _then)
+class __$$TabChangeImplCopyWithImpl<$Res>
+    extends _$HomeTabIndexStateCopyWithImpl<$Res, _$TabChangeImpl>
+    implements _$$TabChangeImplCopyWith<$Res> {
+  __$$TabChangeImplCopyWithImpl(
+      _$TabChangeImpl _value, $Res Function(_$TabChangeImpl) _then)
       : super(_value, _then);
 
   @pragma('vm:prefer-inline')
@@ -255,7 +256,7 @@ class __$$_TabChangeCopyWithImpl<$Res>
   $Res call({
     Object? tabIndex = null,
   }) {
-    return _then(_$_TabChange(
+    return _then(_$TabChangeImpl(
       null == tabIndex
           ? _value.tabIndex
           : tabIndex // ignore: cast_nullable_to_non_nullable
@@ -266,8 +267,8 @@ class __$$_TabChangeCopyWithImpl<$Res>
 
 /// @nodoc
 
-class _$_TabChange implements _TabChange {
-  const _$_TabChange(this.tabIndex);
+class _$TabChangeImpl implements _TabChange {
+  const _$TabChangeImpl(this.tabIndex);
 
   @override
   final int tabIndex;
@@ -281,7 +282,7 @@ class _$_TabChange implements _TabChange {
   bool operator ==(dynamic other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
-            other is _$_TabChange &&
+            other is _$TabChangeImpl &&
             (identical(other.tabIndex, tabIndex) ||
                 other.tabIndex == tabIndex));
   }
@@ -292,8 +293,8 @@ class _$_TabChange implements _TabChange {
   @JsonKey(ignore: true)
   @override
   @pragma('vm:prefer-inline')
-  _$$_TabChangeCopyWith<_$_TabChange> get copyWith =>
-      __$$_TabChangeCopyWithImpl<_$_TabChange>(this, _$identity);
+  _$$TabChangeImplCopyWith<_$TabChangeImpl> get copyWith =>
+      __$$TabChangeImplCopyWithImpl<_$TabChangeImpl>(this, _$identity);
 
   @override
   @optionalTypeArgs
@@ -359,12 +360,12 @@ class _$_TabChange implements _TabChange {
 }
 
 abstract class _TabChange implements HomeTabIndexState {
-  const factory _TabChange(final int tabIndex) = _$_TabChange;
+  const factory _TabChange(final int tabIndex) = _$TabChangeImpl;
 
   @override
   int get tabIndex;
   @override
   @JsonKey(ignore: true)
-  _$$_TabChangeCopyWith<_$_TabChange> get copyWith =>
+  _$$TabChangeImplCopyWith<_$TabChangeImpl> get copyWith =>
       throw _privateConstructorUsedError;
 }

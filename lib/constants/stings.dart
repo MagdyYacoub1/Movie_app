@@ -25,6 +25,9 @@ class ConstantStrings {
     "original",
   ];
 
-  ///Path to home screen [MoviesScreen]
-  static const moviesScreen = '/';
+  ///Path to home screen [HomeScreen]
+  static const homeScreen = '/';
+
+  ///Path to home screen [MovieDetailsScreen]
+  static const movieDetailsScreen = '/movieDetailsScreen';
 }

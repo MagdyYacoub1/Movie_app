@@ -151,17 +151,25 @@ class _AdaptiveScaffoldState extends State<AdaptiveScaffold> {
         ),
         body: Row(
           children: [
-            NavigationRail(
-              destinations: [
-                ...widget.destinations.map(
-                  (d) => NavigationRailDestination(
-                    icon: Icon(d.icon),
-                    label: Text(d.title),
+            SingleChildScrollView(
+              child: ConstrainedBox(
+                constraints: BoxConstraints(
+                    minHeight: MediaQuery.of(context).size.height),
+                child: IntrinsicHeight(
+                  child: NavigationRail(
+                    destinations: [
+                      ...widget.destinations.map(
+                        (d) => NavigationRailDestination(
+                          icon: Icon(d.icon),
+                          label: Text(d.title),
+                        ),
+                      ),
+                    ],
+                    selectedIndex: widget.currentIndex,
+                    onDestinationSelected: widget.onNavigationIndexChange,
                   ),
                 ),
-              ],
-              selectedIndex: widget.currentIndex,
-              onDestinationSelected: widget.onNavigationIndexChange,
+              ),
             ),
             Expanded(
               child: widget.body!,
