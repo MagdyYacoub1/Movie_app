@@ -1,4 +1,4 @@
-# Movie appication
+# Movie application _(Magdy Yacoub)_
 # Table of content
 1. [Preview](#preview)
 2. [Key Features](#features)
